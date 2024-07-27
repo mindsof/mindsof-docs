@@ -1,0 +1,698 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>License</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="616a3da6-1b01-4141-83ef-b983360a95a5" class="page sans"><header><p class="page-description"></p></header><div class="page-body"><h1 id="3cd1c7e7-a313-44fc-8796-80c38532581f" class=""><strong>End User License Agreement of CodeGraph (“EULA”)</strong></h1><p id="bea8be52-11d9-4619-9b48-ec449b8b5aca" class=""><strong>This Standard EULA is concluded between You and the Developer with respect to the Plugin.</strong></p><h2 id="f3167395-ab0b-49e9-9f13-84a794a9c33a" class=""><strong>1. Definitions</strong></h2><p id="3f65f285-ab36-4cc9-a876-815a00a7023e" class=""><strong>“Confirmation”</strong> means an email from JetBrains confirming Your rights to use a Paid Plugin and containing important information about Your license or Subscription.</p><p id="1a0dc00e-d73f-4d36-8ce3-0db069e1c985" class="">
+</p><p id="5a7560b0-a977-4346-8a19-ac2b9d684ad2" class=""><strong>&quot;Developer&quot;</strong> means the author of CodeGraph: <a href="mailto:yanyin0703@gmail.com">yanyin0703@gmail.com</a>, Shanghai, China.</p><p id="9e0a8e25-7a60-45a0-904e-5933ba426f2f" class="">
+</p><p id="237c845b-7db2-42aa-b685-bfaf48bdc4a5" class=""><strong>“Documentation”</strong> means the latest versions of all online technical documentation available for a Plugin at JetBrains Marketplace and any other relevant Plugin documentation provided either by JetBrains or the Developer that applies to the Plugin.</p><p id="8156ddb9-9148-43e8-bbec-05e6a022ee72" class="">
+</p><p id="3afc63c3-8c84-4858-be76-d2502ad616c5" class=""><strong>“Fallback Date”</strong> means the date falling twelve (12) months prior to the date Your Subscription expired.</p><p id="e030ddcb-030a-49ef-b768-2f918a7af38a" class="">
+</p><p id="a632f52b-44d5-4e29-8d40-14fbffa21294" class=""><strong>“Fallback Version”</strong> means the most recent Plugin Version that the Developer made available for public purchase prior to the Fallback Date, along with any bug-fix updates for that Plugin Version. The Fallback Version does not include any Plugin updates or upgrades other than bug-fix updates that You may have used in the period between the Fallback Date and the expiration date of Your Subscription. </p><p id="4f89ed58-083b-40e7-95b0-0360d370c4de" class="">
+</p><p id="8244082a-10a6-4c3b-b3e9-db46f5c348f5" class=""><strong>“Free Plugin”</strong> means a Plugin that is offered at no cost.</p><p id="a79a0715-5e9d-4bfe-a1bd-cb816e25e8c5" class="">
+</p><p id="80861eac-a889-4ac5-b7d3-de3cace364c2" class=""><strong>&quot;JetBrains&quot;</strong> means JetBrains s.r.o., which has its registered office at Na Hřebenech II 1718/8, Prague, 14000, Czech Republic, registered with the Commercial Register kept by the Municipal Court of Prague, Section C, file 86211, ID.Nr.: 265 02 275.</p><p id="6abfbb36-153d-4673-9cad-df27a0516457" class="">
+</p><p id="9c23a01e-faf7-429c-89c8-e78d1ab98cc4" class=""><strong>&quot;JetBrains Affiliate&quot;</strong> means the subsidiary and/or any associated companies of JetBrains.</p><p id="0d90fca8-e5c7-4df2-809d-5414128f90ec" class="">
+</p><p id="a8bbb7e1-508f-4602-a632-2dd9d14006f0" class=""><strong>&quot;JetBrains Marketplace&quot;</strong> means any platform operated by JetBrains or a JetBrains Affiliate on which JetBrains or JetBrains Affiliate markets Plugins for JetBrains Products, including the website https://plugins.jetbrains.com and/or any other website or other platform, whether named JetBrains Marketplace, JetBrains Plugins Repository, or otherwise.</p><p id="1baa4339-7f48-45bc-9519-bd23e634cf16" class="">
+</p><p id="d9c5f4e7-e38d-467b-b4f9-1ca7676d360e" class=""><strong>&quot;JetBrains Product&quot;</strong> means any software program or service made available by JetBrains.</p><p id="93c90516-02ec-4e58-b8f9-5f64ff22183b" class="">
+</p><p id="4deca595-06a2-46ee-ad55-496bcd00c355" class=""><strong>“Paid Plugin”</strong> means a Plugin that is offered for a fee (can be either a one-time license fee or a recurring subscription fee).</p><p id="ed38cdbc-05a9-41eb-8ee8-e1d4f990ad44" class="">
+</p><p id="e49fa3c1-f539-4218-a320-6828dd34a241" class=""><strong>&quot;Plugin&quot;</strong> means any plugin, extension, application, widget, or other software program designed to work with JetBrains Products that the Developer makes available under this Standard EULA.</p><p id="f6db387b-b6fc-4825-b01a-48d0a13a6521" class="">
+</p><p id="0e40d236-7070-482e-93e8-068b4229f3f9" class=""><strong>&quot;Plugin Users&quot;</strong> means users that are able to access and use the Plugin concurrently.</p><p id="83537870-b171-4b80-924c-ddb1b9b19301" class="">
+</p><p id="3cf21820-16b4-41fb-8ab5-db60f1a47dae" class=""><strong>“Plugin Version”</strong> means a release, update, or upgrade of a particular Plugin that is not identified by the Developer as being made for the purpose of fixing software bugs.</p><p id="903a0bbf-a5e1-4663-84d8-53c1fa678fe5" class="">
+</p><p id="2fa1e8eb-e11b-445a-a320-b3c7ebeb1aa3" class=""><strong>“Subscription”</strong> means Your right to use a Paid Plugin during the Subscription Period.</p><p id="23f6c905-d114-4eb5-966a-fe0f67cda91e" class="">
+</p><p id="7d5ca201-bb1d-4f91-aa68-705e1be299cd" class=""><strong>“Subscription Period”</strong> means the Subscription period described in Your Confirmation.</p><p id="7acc8e11-8ccd-429e-a261-022fbfe63715" class="">
+</p><p id="c2d32d12-da48-43fc-b770-25c4ecca3ab2" class=""><strong>&quot;You&quot;</strong> means an individual or an entity concluding this Standard EULA.</p><h2 id="55502ea4-3004-47bf-bd74-69ef26c2c642" class=""><strong>2. Grant of License</strong></h2><p id="5f280001-05cd-497b-9703-5f1bd9e9479b" class=""><strong>2.1. License.</strong> The Developer hereby grants You a limited, worldwide, non-exclusive, non-transferable license to use the Plugin (including any generally available updates and upgrades released during your rightful use of the Plugin) as long as the use is in line with Your Confirmation, the Documentation, and the limits set out in this Standard EULA. You may:</p><ol type="1" id="5ae8f677-ca8b-46e0-8574-53318743faee" class="numbered-list" start="1"><li>install the Plugin;</li></ol><ol type="1" id="201e7320-b3d9-4343-a566-f8ce5fa7c6d3" class="numbered-list" start="2"><li>use the Plugin subject to the limits described in Your Confirmation (if any); and</li></ol><ol type="1" id="44186712-f0dd-400d-8a1e-4914253e314a" class="numbered-list" start="3"><li>make backup copies of the Plugin for archival purposes.</li></ol><p id="3ca70bf1-8fb7-4880-a595-37ba0a12a033" class="">
+</p><p id="fd6e90e5-d07c-4941-abac-0d566d2438db" class=""><strong>2.2. Restrictions.</strong> You may not modify, reverse-engineer, decompile, or disassemble the Plugin in whole or in part, or create any derivative works from the Plugin, or sublicense any rights to the Plugin, unless otherwise expressly authorized in writing by the Developer.</p><p id="5186cf84-bbd3-42df-8459-68d6ffb92742" class="">
+</p><p id="0c2f9b34-4ec8-425d-a1d4-911556c344bc" class=""><strong>2.3. Duration of License.</strong> The license granted under this Standard EULA can be provided as:</p><ol type="1" id="934c00c0-6813-46ec-a904-e7c0bed86512" class="numbered-list" start="1"><li>perpetual in case of Free Plugins or Paid Plugins for which You are charged a one-time license fee, and</li></ol><ol type="1" id="84bddd19-750e-44de-a22e-187cd7d51b4c" class="numbered-list" start="2"><li>time-limited for the duration of your Subscription Period, in case of Paid Plugins for which You pay an annual or monthly Subscription fee.</li></ol><p id="1cf5fcb9-d70f-4b00-839c-69fc1ba303e6" class="">
+</p><p id="76994754-f333-4ef6-9767-6e254d69f8bf" class="">For more details about the type of Paid Plugin, see the information in Your Confirmation.</p><h2 id="89a92f80-a300-403e-bbab-22a4340638ab" class=""><strong>3. Subscription</strong></h2><p id="f0c37417-9fda-451c-a5f5-22fcbb094725" class=""><strong>3.1. Subscription Limits.</strong> If You purchased a Plugin Subscription, You must use the Paid Plugin in accordance with the limits described in Your subscription plan (e.g., You must ensure that the maximum number of Plugin Users does not exceed the number of Plugin Users for which You have purchased the Subscription).</p><p id="6cb4a3c4-5ad0-4144-8271-15e91f77539d" class="">
+</p><p id="55e39fb7-bf06-4e54-b364-04fb1605df07" class=""><strong>3.2. Subscription Period.</strong> The Subscription Period can be either annual or monthly.</p><p id="6a988da4-62dc-4e95-8cf1-7e18072ef6a8" class="">
+</p><p id="f505090e-5296-481c-90a1-52004499fead" class=""><strong>3.3. Fallback License.</strong> If the Plugin is provided with a Fallback license according to the Confirmation, following the expiration of the Subscription Period without a renewal, Your license to use the Plugin as stipulated in Section 2 shall continue on a perpetual, royalty-free, non-exclusive, and non-transferable basis with respect to the Fallback Version of the Plugin (including all limitations). The granting of the Fallback license is expressly contingent upon Your compliance with this EULA, including Your payment of the applicable Subscription fees for at least the preceding 12 months in full and without interruptions.</p><h2 id="fd042a53-95a3-4147-b928-4efe01fb8c35" class=""><strong>4. Intellectual Property</strong></h2><p id="c8f0843f-4f8f-437c-8804-f88ed215df4a" class="">The Plugin is protected by copyright and other intellectual property laws and treaties. The Developer or its licensors own all title, copyright, and other intellectual property rights to the Plugin.</p><h2 id="e032a87f-cb2f-4a04-8b2b-761666321a1f" class=""><strong>5. Disclaimer of Warranty</strong></h2><p id="cddafe65-94ae-4d09-b575-ee9227f2467c" class="">ALL PLUGINS ARE PROVIDED TO YOU ON AN &quot;AS-IS&quot; AND &quot;AS AVAILABLE&quot; BASIS WITHOUT WARRANTIES. YOUR USE OF PLUGINS IS AT YOUR OWN RISK. THE DEVELOPER PROVIDES NO WARRANTY AS TO THE PLUGIN&#x27;S USE OR PERFORMANCE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER DISCLAIMS ALL OTHER WARRANTIES AND CONDITIONS, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO THE PLUGIN, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES. THE DEVELOPER DOES NOT WARRANT THAT THE PLUGIN IS ACCURATE, RELIABLE, OR CORRECT; THAT THE PLUGIN MEETS YOUR REQUIREMENTS; THAT THE PLUGIN WILL BE AVAILABLE AT ANY PARTICULAR TIME OR LOCATION, UNINTERRUPTED, OR SECURE; THAT ANY DEFECTS OR ERRORS WILL BE CORRECTED; OR THAT THE PLUGIN IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. EXCEPT AS REQUIRED BY APPLICABLE LAWS, ANY UPDATES AND UPGRADES TO THE PLUGIN WILL ONLY BE PROVIDED ON AN “AS AVAILABLE” BASIS, I.E., AT THE DEVELOPER’S SOLE DISCRETION.</p><h2 id="66b0818a-627b-47c3-9c65-5701134b70e7" class=""><strong>6. Limitation of Liability</strong></h2><p id="c1f4dc0b-5cb3-4767-a215-26f26c3ebb3a" class="">IN NO EVENT WILL THE DEVELOPER BE LIABLE FOR ANY DIRECT OR INDIRECT COSTS, LOSSES, OR DAMAGES ASSOCIATED WITH THE USE OF THE DEVELOPER&#x27;S PLUGIN.</p><p id="f22fcc84-0e2d-423e-ab74-41c40c799660" class="">THE DEVELOPER SHALL NOT BE LIABLE TO YOU FOR ANY LOST PROFITS OR CONSEQUENTIAL DAMAGES, NO MATTER THE CAUSE OF SAID PROFITS OR DAMAGES, AND IN NO EVENT WILL THE DEVELOPER&#x27;S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT OR THE USE OF THE PLUGIN EXCEED THE FEES WHICH YOU PAID FOR THE PLUGIN VIA JETBRAINS MARKETPLACE IN THE THREE-MONTH PERIOD PRECEDING THE CLAIM. THIS LIMITATION WILL APPLY EVEN IF THE DEVELOPER HAS BEEN ADVISED OF THE POSSIBILITY OF THE LIABILITY EXCEEDING THE AMOUNT AND NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY. JETBRAINS&#x27; LIABILITY IS EXCLUDED IN ITS ENTIRETY AS JETBRAINS IS NOT A PARTY TO THE CONTRACTUAL RELATIONSHIP BETWEEN THE DEVELOPER AND YOU.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
