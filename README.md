@@ -3,10 +3,10 @@
 Code Graph is a powerful JetBrains plugin that revolutionizes the way you read and understand code. By visualizing the call relationships between different parts of your codebase, it helps you navigate complex projects with ease and speed.
 
 ## Key Features
-- ** Interactive Code-Graph Synchronization: ** Navigate seamlessly between your code and its visual representation. Clicks on the graph nodes / edges instantly navigate to corresponding code sections, and vice versa.
-- ** Call Path Highlighting: ** Trace the visited path of your code with highlighting, making it easy to follow the flow of your program.
-- ** Advanced Filtering Capabilities: ** Customize your view with robust filtering options. Focus on specific packages, classes, or methods to drill down into the parts of the code that matter most to you.
-- ** Dynamic Graph Manipulation: ** Zoom in, zoom out, move, and expand / collapse nodes to focus on specific areas of interest and manage complex graphs with ease.
+- Interactive Code-Graph Synchronization: Navigate seamlessly between your code and its visual representation. Clicks on the graph nodes / edges instantly navigate to corresponding code sections, and vice versa.
+- Call Path Highlighting: Trace the visited path of your code with highlighting, making it easy to follow the flow of your program.
+- Advanced Filtering Capabilities: Customize your view with robust filtering options. Focus on specific packages, classes, or methods to drill down into the parts of the code that matter most to you.
+- Dynamic Graph Manipulation: Zoom in, zoom out, move, and expand / collapse nodes to focus on specific areas of interest and manage complex graphs with ease.
 
 ## How to Use:
 ### Show callee graph for the method.
